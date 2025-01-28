@@ -1,61 +1,64 @@
-header {
-    text-align: center; 
-    font-family: cursive;
-    font-size: 1rem;
-    font-style: italic;
-    color: brown;
-    margin-bottom: 10px;
+.container{
     
-        
 }
 
- 
-body {
-    /* background-color: peachpuff; */
-    background-image:url('https://static.vecteezy.com/system/resources/thumbnails/026/764/391/small_2x/generative-ai-pink-magenta-fantastic-clouds-sky-and-landscape-gentle-colors-and-with-bright-lights-photo.jpg');
-    background-size: 100px 100px;
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0;
-    height: 100vh;
+.header{
+    grid-area: header;
+    background-color: red;
+
+}
+.logo{
+    grid-area: logo;
+    background-color: aqua;
+}
+.content{
+    grid-area: content;
+    background-color: white;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
     flex-direction: column;
-    
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    padding: 10px;
 }
 
-
-main {
-    flex: 1; 
+.navbar {
     display: flex;
-    justify-content: center; 
-    align-items: center;    
-}
-input{
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    margin-top: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    position: relative;
-
-    
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
-button {
-    position: absolute;
-    top: 80%;
-    left: 49%;
-    transform: translate(-50%, -50%); 
-    padding: 10px 20px;
-    background-color: #f47373;
-    color: white;
-    border: none;
-    border-radius: 5px;
+.nav-left, .nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+/* Center Title */
+.nav-center {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Links Styling */
+a {
+    text-decoration: none;
+    color: black;
     font-size: 16px;
-    cursor: pointer;
-  }
+    font-weight: 500;
+}
+
+a:hover {
+    color: #6a0dad; /* Change color on hover */
+}
